@@ -1,6 +1,6 @@
 const formulario = document.getElementById('form-agenda'); 
-const atividade = [];
-const notas =[];
+const nameUser = [];
+const telUser =[];
 
 let linhas= '';
 
@@ -16,8 +16,8 @@ function adicionaLinha(){
     const inputNomeAtividade = document.getElementById('nome-agenda');
     const inputNotaAtividade = document.getElementById('numero');
 
-    atividade.push(inputNomeAtividade.value);       
-    notas.push(inputNotaAtividade.value); 
+    nameUser.push(inputNomeAtividade.value);       
+    telUser.push(inputNotaAtividade.value); 
 
     let linha = `<tr>`;
     linha += `<td>${inputNomeAtividade.value.toUpperCase()}</td>`;
